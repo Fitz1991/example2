@@ -1,0 +1,158 @@
+name: veterans
+description: A new Flutter application.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.3
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  firebase_core : 0.5.3
+  cupertino_icons: 1.0.0
+  cloud_firestore: ^0.14.4
+  flutter_color: ^1.2.0
+  flutter_bloc: ^6.0.1
+  algolia: 1.0.1
+  url_launcher: ^5.7.10
+  pdf: ^1.11.0
+  permission_handler: ^5.0.1+1
+  pdf_flutter:
+    git: https://github.com/Fitz1991/pdf_flutter-1.1.4.git
+  flutter_share: ^1.0.5
+  flutter_svg: ^0.21.0-nullsafety.0
+  email_validator: '^1.0.0'
+  flutter_mailer: 1.0.1
+  cached_network_image: ^2.3.2+1
+  yandex_mapkit: ^0.4.2
+  location: ^3.2.1
+  rxdart: ^0.25.0
+  logger: ^0.9.4
+  device_preview: ^0.7.1
+  cloud_firestore_web: ^0.2.1+2
+
+dependency_overrides:
+  path_provider: 2.0.1
+  http: 0.13.1
+  http_parser: ^4.0.0
+  image: 3.0.2
+  path_drawing: ^0.4.1+1
+  archive: ^3.1.2
+  crypto: ^3.0.0
+  provider: ^5.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: "^0.8.0"
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/memory.png"
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/youtube.svg
+    - assets/images/vk.svg
+    - assets/images/instagram-sketched.svg
+    - assets/images/ribbon.png
+    - assets/images/memory_in_each_street.png
+    - assets/images/memory.png
+    - assets/images/placemark.png
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: LatoRegular
+      fonts:
+        - asset: assets/fonts/lato-regular.ttf
+        - asset: assets/fonts/lato-light.ttf
+        - asset: assets/fonts/lato-bold.ttf
+          weight: 700
+        - asset: assets/fonts/lato-bold-italic.ttf
+          weight: 700
+        - asset: assets/fonts/lato-italic.ttf
+          style: italic
+    - family: medal
+      fonts:
+        - asset: assets/fonts/medal.ttf
+    - family: museum
+      fonts:
+        - asset: assets/fonts/monument.ttf
+    - family: strap
+      fonts:
+        - asset: assets/fonts/strap.ttf
+    - family: donate
+      fonts:
+        - asset: assets/fonts/donate.ttf
+    - family: home
+      fonts:
+        - asset: assets/fonts/home.ttf
+    - family: info
+      fonts:
+        - asset: assets/fonts/info.ttf
+    - family: phone
+      fonts:
+        - asset: assets/fonts/phone.ttf
+    - family: unload_to_pdf
+      fonts:
+        - asset: assets/fonts/unload_to_pdf.ttf
+    - family: geolocation
+      fonts:
+        - asset: assets/fonts/geolocation.ttf
+    - family: share
+      fonts:
+        - asset: assets/fonts/share.ttf
+    - family: send
+      fonts:
+        - asset: assets/fonts/send.ttf
+    - family: megaphone
+      fonts:
+        - asset: assets/fonts/megaphone.ttf
+    - family: mail
+      fonts:
+        - asset: assets/fonts/mail.ttf
+    - family: tower
+      fonts:
+        - asset: assets/fonts/tower.ttf
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
